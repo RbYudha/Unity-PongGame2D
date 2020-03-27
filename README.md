@@ -1,2 +1,2 @@
-# Unity-PongGame2D
- Membuat game pong menggunakan Unity
+# 2D-Lesson-Pong-Game
+ Game Development
