@@ -602,8 +602,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6ed610e1fe881849b009271984ba5cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  ballDelay: 5
+  speed: 15
+  ballDelay: 1
   ballObj: {fileID: 780690279}
 --- !u!1 &1016467247
 GameObject:

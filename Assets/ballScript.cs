@@ -8,7 +8,7 @@ public class ballScript : MonoBehaviour
 
     public int speed = 20;
 
-    public int ballDelay = 2;
+    public int ballDelay = 1;
 
     public Rigidbody2D ballObj;
 
@@ -26,13 +26,15 @@ public class ballScript : MonoBehaviour
     {
         if (collision.collider.name == "WallRight" || collision.collider.name == "WallLeft") {
             StartCoroutine(ballRespawn());
-            GetComponent<Transform>().position = new Vector2 (0, 0);
         }
     }
 
     public IEnumerator ballRespawn()
      {
+         ballObj.velocity = Vector2.zero;
+         ballObj.GetComponent<Transform>().position = Vector2.zero;
          yield return new WaitForSeconds(ballDelay);
+         ballObj.velocity = new Vector2(1, -1) * speed;
      }
 
 }
