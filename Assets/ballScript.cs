@@ -48,7 +48,7 @@ public class ballScript : MonoBehaviour
          ballObj.GetComponent<Transform>().position = Vector2.zero;
          yield return new WaitForSeconds(ballDelay);
          ballObj.velocity = new Vector2(1, -1) * speed;
-         fireAnim.SetBool("ballMoving",false);
+         fireAnim.SetBool("ballMoving",true);
      }
 
 }
