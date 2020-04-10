@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerCode : MonoBehaviour
 {
@@ -29,8 +30,8 @@ public Text timerText;
             counter -= 1;
             timerText.text = counter.ToString();
         }
-        
-        timerText.text = "GAME OVER!";
+        //timerText.text = "GAME OVER!";
+        SceneManager.LoadScene("GameOver");
     }
 
 }
