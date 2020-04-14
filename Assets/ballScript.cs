@@ -6,7 +6,7 @@ public class ballScript : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public int speed = 20;
+    //public int speed = 20;
 
     public int ballDelay = 1;
 
@@ -18,7 +18,12 @@ public class ballScript : MonoBehaviour
 
     void Start()
     {
-        ballObj.velocity = new Vector2(1, -1) * speed;
+        int x = Random.Range(0, 2)*2 - 1; //nilai x bisa bernilai -1 atau 1
+        int y = Random.Range(0, 2)*2 - 1; //nilai x bisa bernilai -1 atau 1
+        int speed = Random.Range(20, 26); //nilai speed bisa bernilai 20 sampai 25
+
+        ballObj.velocity = new Vector2(x, y) * speed;
+        ballObj.GetComponent<Transform>().position = Vector2.zero;
         fireAnim.SetBool("ballMoving", true);
     }
 
@@ -46,8 +51,14 @@ public class ballScript : MonoBehaviour
          ballObj.velocity = Vector2.zero;
          fireAnim.SetBool("ballMoving", false);
          ballObj.GetComponent<Transform>().position = Vector2.zero;
+
          yield return new WaitForSeconds(ballDelay);
-         ballObj.velocity = new Vector2(1, -1) * speed;
+
+         int x = Random.Range(0, 2)*2 - 1; //nilai x bisa bernilai -1 atau 1
+         int y = Random.Range(0, 2)*2 - 1; //nilai x bisa bernilai -1 atau 1
+         int speed = Random.Range(20, 26); //nilai speed bisa bernilai 20 sampai 25
+
+         ballObj.velocity = new Vector2(x, y) * speed;
          fireAnim.SetBool("ballMoving",true);
      }
 
