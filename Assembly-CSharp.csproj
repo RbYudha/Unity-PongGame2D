@@ -58,6 +58,7 @@
      <Compile Include="Assets\MoveRacket.cs" />
      <Compile Include="Assets\MoveRacket2.cs" />
      <Compile Include="Assets\PlayGame.cs" />
+     <Compile Include="Assets\ScoreCounter.cs" />
      <Compile Include="Assets\TimerCode.cs" />
      <Compile Include="Assets\ballScript.cs" />
      <Compile Include="Assets\mainMenuSrcpt.cs" />
