@@ -6,3 +6,4 @@
 3. Update menambahkan fire animation pada bola 03/04/2020
 4. Update menambahkan Scene main menu dan game over 10/04/2020
 5. Update menambahkan Speed dan movement randomness pada bola 14/04/2020
+6. Update manambahkan player score dan pemenang 15/04/2020 
