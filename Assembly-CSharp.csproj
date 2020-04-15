@@ -62,6 +62,7 @@
      <Compile Include="Assets\TimerCode.cs" />
      <Compile Include="Assets\ballScript.cs" />
      <Compile Include="Assets\mainMenuSrcpt.cs" />
+     <Compile Include="Assets\winnerResult.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />

@@ -615,6 +615,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560200495}
   m_CullTransparentMesh: 0
+--- !u!95 &923444631 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5263762640685557090, guid: a7c3068dc2c22ee498a3e2a82a7ca1fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 5263762640264309747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1016467247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,8 +1032,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56194ff739a1d44bbd88134b8ad6eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreBoard: {fileID: 0}
-  ball: {fileID: 0}
+  scoreBoard1: {fileID: 1763753368}
+  scoreBoard2: {fileID: 560200497}
 --- !u!4 &1432311336
 Transform:
   m_ObjectHideFlags: 0
@@ -1635,6 +1641,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 5263762640960047256, guid: a7c3068dc2c22ee498a3e2a82a7ca1fd,
+        type: 3}
+      propertyPath: fireAnim
+      value: 
+      objectReference: {fileID: 923444631}
+    - target: {fileID: 5263762640960047256, guid: a7c3068dc2c22ee498a3e2a82a7ca1fd,
+        type: 3}
+      propertyPath: scoreCounter
+      value: 
+      objectReference: {fileID: 1432311334}
     - target: {fileID: 5263762640960047257, guid: a7c3068dc2c22ee498a3e2a82a7ca1fd,
         type: 3}
       propertyPath: m_LocalPosition.x

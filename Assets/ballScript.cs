@@ -8,6 +8,8 @@ public class ballScript : MonoBehaviour
 
     //public int speed = 20;
 
+    public GameObject scoreCounter;
+
     public int ballDelay = 1;
 
     public Rigidbody2D ballObj;
@@ -42,6 +44,7 @@ public class ballScript : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.name == "WallRight" || collision.collider.name == "WallLeft") {
+            scoreCounter.GetComponent<ScoreCounter>().updateScore(collision.collider.name);
             StartCoroutine(ballRespawn());
         }
     }

@@ -2,27 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScoreCounter : MonoBehaviour
 {
-    public Text scoreBoard;
-    public GameObject ball;
+    public TextMeshProUGUI scoreBoard1, scoreBoard2;
+    public static int score1 = 0, score2 = 0;
 
-    //private int player1Score = 0;
-
-    // Start is called before the first frame update
     void Start()
     {
-        ball = GameObject.Find ("Ball");
+        scoreBoard1.text = score1.ToString();
+        scoreBoard2.text = score2.ToString();
     }
 
-    // void Update()
-    // {
-    //     if(ball.transform.position.x >= 27.5f){
-    //         player1Score ++;
-    //     }
-
-    //     print(player1Score);
-    // }
+    public void updateScore (string namaWall) {
+        if (namaWall == "WallLeft") {
+            score1 += 1;
+            scoreBoard1.text = score1.ToString();
+        }
+        else if (namaWall == "WallRight") {
+            score2 += 1;
+            scoreBoard2.text = score2.ToString();
+        }
+    }
 
 }
