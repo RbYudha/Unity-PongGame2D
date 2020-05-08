@@ -18,6 +18,8 @@ public class ballScript : MonoBehaviour
 
     public Animator fireAnim;
 
+    public AudioSource hitEffect;
+
     void Start()
     {
         int x = Random.Range(0, 2)*2 - 1; //nilai x bisa bernilai -1 atau 1
@@ -46,6 +48,9 @@ public class ballScript : MonoBehaviour
         if (collision.collider.name == "WallRight" || collision.collider.name == "WallLeft") {
             scoreCounter.GetComponent<ScoreCounter>().updateScore(collision.collider.name);
             StartCoroutine(ballRespawn());
+        }
+        if (collision.collider.name == "Player") {
+            hitEffect.Play();
         }
     }
 
